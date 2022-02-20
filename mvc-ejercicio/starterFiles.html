@@ -1,0 +1,90 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Características de los componentes de MVC</h1>
+    <form>
+        <label for="component">Componentes</label>:
+        <select name="component" id="component">
+            <option value="" selected>Seleccioná un componente</option>
+        </select>
+    </form>
+    <ul id="characteristics"></ul>
+</body>
+
+<script src="/model.js"></script>
+<script src="/controller.js"></script>
+<script>
+    //LISTA DE COMPONENTES
+    const components = [
+        {
+            id: "1",
+            title: 'Modelo',
+        },
+        {
+            id: "2",
+            title: 'Vista',
+        },
+        {
+            id: "3",
+            title: 'Controlador',
+        },
+    ];
+    //Array con características de los componentes
+    const getCharacteristics = (componentId) => {
+        switch (componentId) {
+            case "1":
+                return ['Capa con la que interactúa el cliente, es la interfaz gráfica, lo que ve el usuario.', 'Muestra y obtiene información y funciona a través de eventos que son las interacciones del usuario con la interfaz.'];
+            case "2":
+                return ['Relaciona los datos de la aplicación, se encarga de realizar las consultas a la base de datos y administrar la lógica del negocio.', 'Es agnóstica de las vistas, es decir, está completamente aislada.'];
+            case "3":
+                return ['Responde a las acciones o eventos que realiza el cliente a través de las vistas, se encarga de elegir la vista a mostrar y los datos a procesar.', 'Es el enlace que interactúa con vistas y con modelos'];
+            default:
+                return [];
+        }
+    };
+
+    //Creación de la etiqueta HTML <option> que irá en el select 
+    //Se utiliza más tarde en la función que llenará la lista de opciones  
+    const createOptionElement = (text, value) => {
+        const element = document.createElement('option');
+        element.textContent = text;
+        element.value = value;
+        return element;
+    };
+
+    //FUNCIÓN QUE LLENARÁ LA LISTA DE OPCIONES
+    const componentElement = document.querySelector('select');
+    components.forEach((component) => {
+        componentElement.appendChild(createOptionElement(component.title, component.id));
+    });
+
+
+    //Creación de la etiqueta HTML <li> que irá en el ul 
+    //Se utiliza más tarde en la función que llenará la lista de características 
+    const createLiElement = (text) => {
+        const element = document.createElement('li');
+        element.textContent = text;
+        return element;
+    };
+
+
+
+    // FUNCIÓN QUE DETECTA EL CAMBIO DE OPCIÓN Y LLAMA A LA CREACIÓN DE NUEVOS ELEMENTOS
+    componentElement.addEventListener('change', (e) => {
+        // Función que busca las características correspondientes
+        const characteristics = getCharacteristics(e.target.value);
+        const characteristicElement = document.getElementById('characteristics');
+        // Vaciar la lista anterior
+        characteristicElement.innerHTML = '';
+        //Función que llenará la lista de características 
+        characteristics.forEach((characteristic) => {
+            characteristicElement.appendChild(createLiElement(characteristic));
+        });
+    });
+
+</script>
+
+</html>

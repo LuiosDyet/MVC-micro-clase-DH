@@ -1,0 +1,19 @@
+body {
+    background-image: url('/img/background.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: #2e353b;
+    height: 100vh;
+}
+
+.indexList {
+    list-style-type: none;
+}
+.indexList li button {
+    text-align: start;
+}
+@media (max-width: 769px) {
+    .hide-sm {
+        display: none;
+    }
+}
