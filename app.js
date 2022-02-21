@@ -12,10 +12,9 @@ app.use(express.static(path.join(__dirname, './public')));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.listen(80, () => {
-    console.log(
-        'Escuchando puerto 80, cambiá a otro puerto (por ejemplo 3000) para utilizarlo en localhost'
-    );
+const PORT = process.env.PORT || 80;
+app.listen(PORT, () => {
+    console.log(`Escuchando puerto ${PORT}`);
 });
 
 app.get('/', controller.slide);
