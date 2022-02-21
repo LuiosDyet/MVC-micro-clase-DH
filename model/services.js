@@ -73,7 +73,7 @@ const services = {
                         section += `<h4 class="col-12 col-md-6 mb-3">${component[1]}</h4>`;
                         break;
                     case 'img':
-                        section += `<div class="col-12 col-md-6 order-1 order-md-0 mb-5">
+                        section += `<div class="imgDiv order-1 order-md-0 mb-5">
                                         <img class="img-thumbnail" src="/img/${component[1]}" alt="${component[1]}">
                                     </div>`;
                         break;

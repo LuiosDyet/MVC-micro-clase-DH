@@ -46,7 +46,7 @@
             <h1><%= title %> </h1>
             <hr class="mb-3">
             <section class="row"><%- section %> </section>
-            <% if(slidesNumber.currentSlideNumber == 11) {%>
+            <% if(slidesNumber.currentSlideNumber == index.length) {%>
             <form class="position-absolute bottom-0 end-0 p-5" action="/closeProject" method="post">
                 <button class="btn btn-danger" type="submit">Cerrar proyecto</button>
             </form>
