@@ -4,7 +4,8 @@
     "description": "",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon app.js"
+        "start": "node app.js",
+        "start_local": "nodemon -r dotenv/config app.js"
     },
     "keywords": [],
     "author": "",
@@ -14,6 +15,7 @@
         "express": "^4.17.3"
     },
     "devDependencies": {
-        "nodemon": "^2.0.15"
+        "nodemon": "^2.0.15",
+        "dotenv": "^11.0.0"
     }
 }
