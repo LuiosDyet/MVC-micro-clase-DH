@@ -1,3 +1,4 @@
+<!-- ✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂ -->
 <html>
 
 <head>
@@ -17,6 +18,9 @@
 <script src="/model.js"></script>
 <script src="/controller.js"></script>
 <script>
+
+    //  ✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂
+
     //LISTA DE COMPONENTES
     const components = [
         {
@@ -46,6 +50,7 @@
         }
     };
 
+
     //Creación de la etiqueta HTML <option> que irá en el select 
     //Se utiliza más tarde en la función que llenará la lista de opciones  
     const createOptionElement = (text, value) => {
@@ -70,7 +75,7 @@
         return element;
     };
 
-
+    //  ✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂
 
     // FUNCIÓN QUE DETECTA EL CAMBIO DE OPCIÓN Y LLAMA A LA CREACIÓN DE NUEVOS ELEMENTOS
     componentElement.addEventListener('change', (e) => {
@@ -84,6 +89,8 @@
             characteristicElement.appendChild(createLiElement(characteristic));
         });
     });
+
+//  ✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂✂
 
 </script>
 

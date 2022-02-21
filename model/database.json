@@ -1,6 +1,6 @@
 [
   {
-    "currentSlideNumber": "12",
+    "currentSlideNumber": "4",
     "writeEnabled": true
   },
   {
@@ -130,9 +130,6 @@
         "id": 11,
         "title": "d) Conclusiones",
         "data": [
-          {
-            "h2": "Algunas preguntas para saber si entendimos la clase"
-          },
           {
             "h3": "¿Qué significa MVC?"
           },
