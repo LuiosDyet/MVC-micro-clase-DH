@@ -136,7 +136,6 @@ const services = {
     return links;
   },
   setListItem(input) {
-    console.log("input", input);
     const [metaData, slidesData] = this.getData();
     const currentSlide = this.getCurrentSlide();
     currentSlide.data[0].ul.push(input);
