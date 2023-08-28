@@ -1,0 +1,195 @@
+[
+  {
+    "currentSlideNumber": "5",
+    "writeEnabled": true
+  },
+  {
+    "slides": [
+      {
+        "id": 1,
+        "title": "Portada",
+        "data": [
+          {
+            "h3": "En breve comenzamos",
+            "img": "MVC Portada.png"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Presentación",
+        "data": [
+          {
+            "h3": "Soy Luis y estos son algunos proyectos que me divirtieron:"
+          },
+          {
+            "h4": "Mapa musical argentino",
+            "img": "mapa-musical-argentino.gif"
+          },
+          {
+            "h4": "Memotest mapa musical argentino",
+            "img": "mapa-musical-memotest.gif"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "¿Qué vamos a hacer esta clase?",
+        "data": [
+          {
+            "h2": "a) Repasar lo aprendido en el video"
+          },
+          {
+            "h2": "b) Jugar a MVCP"
+          },
+          {
+            "h2": "c) Vamos a dividir un proyecto en MVC"
+          },
+          {
+            "h2": "d) Conclusiones"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "a) ¿Qué es MVC?",
+        "data": [
+          {
+            "ul": [],
+            "img": "0 que es MVC.png"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "___Vista",
+        "data": [
+          {
+            "ul": [],
+            "img": "4 Vista.png"
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "___Modelo",
+        "data": [
+          {
+            "ul": [],
+            "img": "5 Modelo.png"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "___Controlador",
+        "data": [
+          {
+            "ul": [],
+            "img": "6 Controlador.png"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "___Flujo",
+        "data": [
+          {
+            "img": "MVC Flujo.png"
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "b) MVCP",
+        "data": [
+          {
+            "h2": "Modelo- Vista - Controlador - Patrañas",
+            "h3": "Vamos a ver varias imágenes y hay que elegir a cuál de las 4 opciones corresponde, tenemos 20 segundos por pregunta. ¡A jugar!",
+            "img": "MCVP.png"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "c) Dividamos un proyecto en MVC",
+        "data": [
+          {
+            "h3": "A guardar, a guardar, cada cosa en su lugar",
+            "img": "MVC code.png",
+            "a": [
+              {
+                "title": "Descargá, deszipeá y abrí el proyecto en VSCode",
+                "url": "./downloads/mvc-ejercicio.rar"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "d) Conclusiones",
+        "data": [
+          {
+            "h3": "¿Qué significa MVC?"
+          },
+          {
+            "h3": "¿Qué es un patrón de diseño?"
+          },
+          {
+            "h3": "¿Qué “preocupaciones” tiene cada componente?"
+          },
+          {
+            "h3": "¿Cómo es el flujo de trabajo entre los distintos componentes?"
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "Cierre",
+        "data": [
+          {
+            "h3": "Hemos dados nuestros primeros pasos en el patrón de diseño MVC. Queda mucho más para aprender y además ponerlo en práctica. "
+          },
+          {
+            "h3": "Recursos sobre MVC:"
+          },
+          {
+            "a": [
+              {
+                "title": "Artículo Mozilla MDN",
+                "url": "https://developer.mozilla.org/es/docs/Glossary/MVC"
+              },
+              {
+                "title": "Artículo de Wikipedia",
+                "url": "https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador"
+              },
+              {
+                "title": "Video explicativo en español",
+                "url": "https://youtu.be/q_MxzeodgZw"
+              },
+              {
+                "title": "Breve video explicativo en inglés",
+                "url": "https://youtu.be/DUg2SWWK18I"
+              },
+              {
+                "title": "Explicación clara con ejemplos (inglés)",
+                "url": "https://www.educative.io/blog/mvc-tutorial"
+              }
+            ]
+          },
+          {
+            "h3": ""
+          },
+          {
+            "h3": "Pueden ingresar a esta presentación a través del vínculo que ven en la URL. La misma está armada sobre MVC, los invito a chusmearla."
+          },
+          {
+            "title": "Repositorio de github",
+            "url": "https://github.com/LuiosDyet/MVC-micro-clase-DH"
+          }
+        ]
+      }
+    ]
+  }
+]
